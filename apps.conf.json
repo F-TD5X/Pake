@@ -10,13 +10,13 @@
       "name": "mapgenie",
       "title": "Mapgenie",
       "name_zh": "Mapgenie",
-      "url": "https://mapgenie.io"
+      "url": "https://mapgenie.io/"
     },
     {
       "name": "tarkovmap",
       "title": "TarkovMap",
       "name_zh": "塔科夫地图",
-      "url": "https://mapgenie.io/tarkov"
+      "url": "https://mapgenie.io/tarkov/"
     }
   ]
 }
