@@ -82,7 +82,7 @@ switch (os.platform()) {
     platformConfig = windowsJson;
     platformVariables = variables.windows;
     updateResources();
-    updateIconFile(platformVariables.hdIconPath, platformVariables.hdDefaultPath);
+    updateIconFile(platformVariables.hdIconPath, platformVariables.hdDefaultIconPath);
     break;
 }
 
