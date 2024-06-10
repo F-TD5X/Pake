@@ -45,15 +45,15 @@ const variables = {
   macos: {
     configFilePath: 'src-tauri/tauri.macos.conf.json',
     iconPath: `src-tauri/icons/${process.env.NAME}.icns`,
-    defaultPath: 'src-tauri/icons/icon.icns',
+    defaultIconPath: 'src-tauri/icons/icon.icns',
     icon: [`icons/${process.env.NAME}.icns`],
   },
   windows: {
     configFilePath: 'src-tauri/tauri.windows.conf.json',
     iconPath: `src-tauri/png/${process.env.NAME}_32.ico`,
-    defaultPath: 'src-tauri/png/icon_32.ico',
+    defaultIconPath: 'src-tauri/png/icon_32.ico',
     hdIconPath: `src-tauri/png/${process.env.NAME}_256.ico`,
-    hdDefaultPath: 'src-tauri/png/icon_256.ico',
+    hdDefaultIconPath: 'src-tauri/png/icon_256.ico',
     icon: [`png/${process.env.NAME}_256.ico`, `png/${process.env.NAME}_32.ico`],
     resources: [`png/${process.env.NAME}_32.ico`],
   },
@@ -86,7 +86,7 @@ switch (os.platform()) {
     break;
 }
 
-updateIconFile(platformVariables.defaultIconPath, platformVariables.defaultIconPath);
+updateIconFile(platformVariables.iconPath, platformVariables.defaultIconPath);
 
 updatePlatformConfig(platformConfig, platformVariables);
 
